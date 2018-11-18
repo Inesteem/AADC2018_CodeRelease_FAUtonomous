@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="marker_detector_new"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\IntersectionDetectorFilterNew\;CMake Files\LaserPointerFollower\;CMake Files\OutputLimiter\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\opt\;CMake Files\..\..\..\..\..\opt\opencv\;CMake Files\..\..\..\..\..\opt\opencv\3.4.1\;CMake Files\..\..\..\..\..\opt\opencv\3.4.1\share\;CMake Files\..\..\..\..\..\opt\opencv\3.4.1\share\OpenCV\;CMake Files\..\..\..\..\..\opt\ADTF\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtffiltersdk\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfucom3\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfbase\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfstreaming3\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfmediadescription\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfddl\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfsystemsdk\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfremotesdk\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\easy_profiler\;CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\;CMake Files\..\..\..\..\..\opt\qt\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Widgets\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Charts\;CMake Files\EmergencyCarDetection\;CMake Files\LaneDetection\;CMake Files\MarkerDetectorNew\;CMake Files\FTO_CarPose\;CMake Files\AccToSpeed\;CMake Files\SpeedController\;CMake Files\StateControlManagement\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="marker_detector_new">
+				<Option output="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/marker_detector_new.adtfplugin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLINUX64"/>
+					<Add option="-DEASY_PROFILER_STATIC=1"/>
+					<Add option="-DEASY_PROFILER_VERSION_MAJOR=1"/>
+					<Add option="-DEASY_PROFILER_VERSION_MINOR=3"/>
+					<Add option="-DEASY_PROFILER_VERSION_PATCH=0"/>
+					<Add option="-DEASY_DEFAULT_PORT=28077"/>
+					<Add option="-DBUILD_WITH_EASY_PROFILER=1"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/aadc/AADC/src/aadcUser/../../include"/>
+					<Add directory="/home/aadc/AADC/src/aadcUser/../../_install/linux64/include"/>
+					<Add directory="/opt/opencv/3.4.1/include"/>
+					<Add directory="/opt/opencv/3.4.1/include/opencv"/>
+					<Add directory="/opt/boost/1.66.0/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtffiltersdk/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/a_utils/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfucom3/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfbase/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfstreaming3/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfsystemsdk/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfmediadescription/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfddl/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfremotesdk/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfrpc/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/easy_profiler/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 marker_detector_new"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="marker_detector_new/fast">
+				<Option output="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/marker_detector_new.adtfplugin" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DLINUX64"/>
+					<Add option="-DEASY_PROFILER_STATIC=1"/>
+					<Add option="-DEASY_PROFILER_VERSION_MAJOR=1"/>
+					<Add option="-DEASY_PROFILER_VERSION_MINOR=3"/>
+					<Add option="-DEASY_PROFILER_VERSION_PATCH=0"/>
+					<Add option="-DEASY_DEFAULT_PORT=28077"/>
+					<Add option="-DBUILD_WITH_EASY_PROFILER=1"/>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/aadc/AADC/src/aadcUser/../../include"/>
+					<Add directory="/home/aadc/AADC/src/aadcUser/../../_install/linux64/include"/>
+					<Add directory="/opt/opencv/3.4.1/include"/>
+					<Add directory="/opt/opencv/3.4.1/include/opencv"/>
+					<Add directory="/opt/boost/1.66.0/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtffiltersdk/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/a_utils/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfucom3/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfbase/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfstreaming3/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfsystemsdk/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfmediadescription/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfddl/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfremotesdk/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/adtfrpc/include"/>
+					<Add directory="/opt/ADTF/3.3.3/pkg/easy_profiler/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 marker_detector_new/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="marker_detector_new_pdgen">
+				<Option working_dir="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 marker_detector_new_pdgen"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/aadc/AADC/include/tinyxml2.cpp">
+			<Option target="marker_detector_new"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/include/tinyxml2.h">
+			<Option target="marker_detector_new"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/MarkerDetectorNew.cpp">
+			<Option target="marker_detector_new"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/MarkerDetectorNew.h">
+			<Option target="marker_detector_new"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/aruco_helpers.h">
+			<Option target="marker_detector_new"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/stdafx.h">
+			<Option target="marker_detector_new"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/IntersectionDetectorFilterNew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\IntersectionDetectorFilterNew\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/LaserPointerFollower/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\LaserPointerFollower\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/OutputLimiter/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\OutputLimiter\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../AADCConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../AADCConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../AADC_PRIVATE.cmake">
+			<Option virtualFolder="CMake Files\..\..\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/opencv/3.4.1/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\opencv\3.4.1\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/opencv/3.4.1/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\opencv\3.4.1\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/opencv/3.4.1/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\opencv\3.4.1\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/opencv/3.4.1/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\opencv\3.4.1\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/ADTFConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/ADTFConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/ADTFMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtffiltersdk/adtffiltersdk-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtffiltersdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtffiltersdk/adtffiltersdk-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtffiltersdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtffiltersdk/adtffiltersdk-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtffiltersdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtffiltersdk/adtffiltersdk-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtffiltersdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtffiltersdk/adtffiltersdk-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtffiltersdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/a_utils/a_utils-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/a_utils/a_utils-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/a_utils/a_utils-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/a_utils/a_utils-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/a_utils/a_utils-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/a_utils/test_functions.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\a_utils\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfucom3/adtfucom3-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfucom3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfucom3/adtfucom3-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfucom3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfucom3/adtfucom3-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfucom3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfucom3/adtfucom3-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfucom3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfucom3/adtfucom3-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfucom3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfbase/adtfbase-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfbase\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfbase/adtfbase-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfbase\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfbase/adtfbase-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfbase\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfbase/adtfbase-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfbase\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfbase/adtfbase-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfbase\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfstreaming3/adtfstreaming3-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfstreaming3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfstreaming3/adtfstreaming3-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfstreaming3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfstreaming3/adtfstreaming3-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfstreaming3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfstreaming3/adtfstreaming3-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfstreaming3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfstreaming3/adtfstreaming3-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfstreaming3\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfmediadescription/adtfmediadescription-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfmediadescription\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfmediadescription/adtfmediadescription-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfmediadescription\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfmediadescription/adtfmediadescription-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfmediadescription\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfmediadescription/adtfmediadescription-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfmediadescription\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfmediadescription/adtfmediadescription-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfmediadescription\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfddl/adtfddl-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfddl\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfddl/adtfddl-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfddl\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfddl/adtfddl-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfddl\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfddl/adtfddl-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfddl\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfddl/adtfddl-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfddl\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfsystemsdk/adtfsystemsdk-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfsystemsdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfsystemsdk/adtfsystemsdk-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfsystemsdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfsystemsdk/adtfsystemsdk-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfsystemsdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfsystemsdk/adtfsystemsdk-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfsystemsdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfsystemsdk/adtfsystemsdk-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfsystemsdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfremotesdk/adtfremotesdk-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfremotesdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfremotesdk/adtfremotesdk-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfremotesdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfremotesdk/adtfremotesdk-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfremotesdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfremotesdk/adtfremotesdk-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfremotesdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfremotesdk/adtfremotesdk-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfremotesdk\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfrpc/adtfrpc-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfrpc/adtfrpc-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfrpc/adtfrpc-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfrpc/adtfrpc-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfrpc/adtfrpc-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfrpc/stub_generation.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfrpc\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/easy_profiler/easy_profilerConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\easy_profiler\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/easy_profiler/easy_profilerConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\easy_profiler\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/easy_profiler/easy_profilerTargets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\easy_profiler\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/easy_profiler/easy_profilerTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\easy_profiler\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/easy_profiler/easy_profilerTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\easy_profiler\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfui/ADTFQTMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfui/adtfui-config-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfui/adtfui-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfui/adtfui-targets-debug.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfui/adtfui-targets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/ADTF/3.3.3/pkg/adtfui/adtfui-targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\ADTF\3.3.3\pkg\adtfui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QComposePlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEglFSEmulatorIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEglFSIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEglFSX11IntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevMousePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTabletPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QEvdevTouchScreenPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QGtk3ThemePlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QIbusPlatformInputContextPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QJp2Plugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QLinuxFbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QVncIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QXcbEglIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QXcbGlxIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Gui/Qt5Gui_QXcbIntegrationPlugin.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Gui\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Core\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Charts/Qt5ChartsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Charts\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/../../../../../opt/qt/5.9.0/5.9/gcc_64/lib/cmake/Qt5Charts/Qt5ChartsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\opt\qt\5.9.0\5.9\gcc_64\lib\cmake\Qt5Charts\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/EmergencyCarDetection/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\EmergencyCarDetection\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/LaneDetection/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\LaneDetection\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/MarkerDetectorNew/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\MarkerDetectorNew\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/FTO_CarPose/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\FTO_CarPose\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/AccToSpeed/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\AccToSpeed\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/SpeedController/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\SpeedController\"/>
+		</Unit>
+		<Unit filename="/home/aadc/AADC/src/aadcUser/StateControlManagement/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\StateControlManagement\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,37 @@
+/**
+ * @file
+ * \brief Software Examples Overview for Doxygen.
+ *
+ * 
+ * Copyright &copy; Audi Electronics Venture GmbH. All rights reserved
+ *
+ * $Author: voigtlpi $
+ * $Date: 2015-10-15 14:28:29 +0200 (Do, 15 Okt 2015) $
+ * $Revision: 55858 $
+ *
+ * This is only a doxygen file for better understanding.
+ *
+ */
+
+/**
+ * \page page_example_synchronizer_filter Synchronizer Filter
+ *
+\par This example shows:
+\li ... how to manually implement a filter (without a trigger function).
+\li ... how to implement a filter with dynamic Pins based on @ref adtf::filter::ant::cDynamicFilter.
+\li ... how to synchronize multiple data streams according to their stream time.
+
+\par Description
+
+The Filter supports dynamic input and output Pins. It will forward data of an input Pin on an output Pin that has the same name prefix up to the last underscore (i.e. "data_in1" will be forwarded via "data_in1_out"), so you have to name those Pins accordingly.
+
+It sorts incoming samples according to their timestamp. When the time difference between the first and last sample in the queue exeeds "queue_transfer_start_timeout" then the filter will forward all items up to "queue_transfer_end_timeout". This way you can set a sliding window where you are sure that no more data will be received that has a timestamp within that range. Setting start and end timeout to the same value will give you a contineous output with the given delay.
+
+The Filter sports a "synchronous_queue_processing" Property that, if activated, forces the queue to be forwarded synchronously when a trigger is recieved on one of the input Pins and the queue forwarding conditions are met.
+You are advised to use a Timer Runner instead with the same interval as the queue transfer start minus the queue transfer end timeout (or what ever your application requires).
+
+An example session (Demo TimeStamp Synchronizer) that shows how to use the Filter is available in the Example ADTF Project.
+
+ */
+
+

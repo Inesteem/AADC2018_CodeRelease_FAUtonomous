@@ -1,0 +1,3 @@
+max interval: 75.0003  of hungryTerm  0.98
+neg vals prop: 5 - -13 = 8
+pos vals prop: 16 - 7 = 9
